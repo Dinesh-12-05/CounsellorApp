@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/browser_actions_bg_grey"
+    tools:context=".StudentProfile">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="182dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="188dp"
+        android:text="Student Name"
+        android:textColor="@color/white"
+        android:background="@drawable/edittextshape"
+        android:backgroundTint="@color/purple_500"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="87dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="7dp"
+                android:text="USN"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvusn"
+                android:layout_width="230dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="7dp"
+                android:hint="usn"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.823"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="765dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="88dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="231dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:hint="Email"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.827"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvusn" />
+
+            <TextView
+                android:id="@+id/tvbatch"
+                android:layout_width="231dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:hint="batch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.827"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvphone" />
+
+            <TextView
+                android:id="@+id/tvdob"
+                android:layout_width="231dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:hint="DOB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.833"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbatch" />
+
+            <TextView
+                android:id="@+id/tvgender"
+                android:layout_width="231dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:hint="gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.833"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdob" />
+
+            <TextView
+                android:id="@+id/tvsslcpercent"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:hint="percent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/tvsslcyop"
+                android:layout_width="138dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:hint="year"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.882"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/tvsslcschool"
+                android:layout_width="245dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:hint="school name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.801"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvsslcyop" />
+
+            <TextView
+                android:id="@+id/tvpupercent"
+                android:layout_width="96dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:hint="percent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.419"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/tvugcombination"
+                android:layout_width="135dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:hint="Combination"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.873"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/tvugyop"
+                android:layout_width="135dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="18dp"
+                android:textAlignment="center"
+                android:hint="Year"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.884"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvugcombination" />
+
+            <TextView
+                android:id="@+id/tvugdegree"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:hint="degree"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/tvugcgpa"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:hint="CGPA"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvugdegree" />
+
+            <TextView
+                android:id="@+id/tvpuyop"
+                android:layout_width="133dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:hint="year"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.866"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/tvpuclg"
+                android:layout_width="241dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:hint="College name"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.776"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvpuyop" />
+
+            <TextView
+                android:id="@+id/tvphone"
+                android:layout_width="231dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:hint="phone"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.827"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvemail" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:text="Phone"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="88dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:text="DOB"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="88dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="Gender"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="89dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:text="(%)  Year"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="86dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="12dp"
+                android:text="School"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="86dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:text="College"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:text="(%)  Year"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="86dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:text="Degree"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="86dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text="CGPA  Year"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:text="SSLC DETAILS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/edittextshape"
+                android:backgroundTint="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgender" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:text="PUC DETAILS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/edittextshape"
+                android:backgroundTint="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvsslcschool" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:text="UG DETAILS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/edittextshape"
+                android:backgroundTint="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvpuclg" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="88dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="12dp"
+                android:text="Batch"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="89dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:text="College"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/tvugclg"
+                android:layout_width="244dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:hint="College name"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvugyop" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
